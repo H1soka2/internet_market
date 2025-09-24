@@ -1,11 +1,11 @@
-from django.http import HttpRequest, HttpResponse
+
 from django.shortcuts import render
+
+
+
 
 def index(request):
     return render(request, 'index.html')
 
 def about(request):
-    return render(request, 'about.html'),
-
-# def catalog(request):
-    # return render(request, ' catalog.html'),
+    return render(request, 'templates/about.html'),
